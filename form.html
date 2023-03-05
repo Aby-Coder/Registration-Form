@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+    <!-- get OR post method -->
+    <form action="#" method="post" > 
+    <table border="1" width="600" cellspacing="5" cellspadding="5" >
+        <th colspan="2"><h1>Enrollment Form</h1> </th>
+        <tr>
+            <td>First Name</td>
+            <td><input type="text" name="fname" id="firstname" placeholder="Enter your first name" required></td>
+        </tr>
+
+        <tr>
+            <td>Last Name</td>
+            <td><input type="text" name="fname" id="lastname" placeholder="Enter your Last name" required></td>
+        </tr>
+
+        <tr>
+            <td>Email</td>
+            <td><input type="email" name="email" id="email" placeholder="Enter your email" required></td>
+        </tr>
+
+        <tr>
+            <td>Password</td>
+            <td><input type="password" name="Password" id="Password" placeholder="Enter your Password" required></td>
+        </tr>
+
+        <tr>
+            <td>DOB</td>
+            <td><input type="date" name="DOB" id="DOB" placeholder="Enter your DOB" required></td>
+        </tr>
+
+        <tr>
+            <td>Upload</td>
+            <td><input type="file" name="Upload" id="Upload" placeholder="Upload" required></td>
+        </tr>
+
+        <tr>
+            <td>Gender</td>
+            <td>
+                <!-- radio is for select one option so you have to add name input for all radio button -->
+                <input type="radio" name="gender" id="male" value="male">Male
+                <input type="radio" name="gender" id="Female" value="Female">Female
+                <input type="radio" name="gender" id="Others" value="Others">Others
+                
+        </tr>
+        <tr>
+            <td>Hobbies</td>
+<td>
+           <input type="Checkbox" name="Music" id="Music" value="Music">Music
+           <input type="Checkbox" name="Dance" id="Dance" value="Dance"> Dance
+              <input type="Checkbox" name="Reading" id="Reading" value="Reading"> Reading
+        </td>
+          
+        </tr>
+
+        <tr>
+            <td>Country:</td>
+<td>
+            <select name="country" id="country">
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Canada">Canada</option>
+                <option value="Australia">Australia</option>
+            </select>
+        </td> 
+</tr>
+<tr>
+    
+<td>comments:</td>
+<td>
+            
+<textarea name="comments" id="comments" cols="60" rows="10"></textarea>
+</td>
+    
+</tr>
+
+<tr>
+    
+    <td colspan="2">
+        <input  type="submit" name="submit" value="Submit">
+        <input  type="Reset" name="Reset" value="Reset">
+
+    </td>
+    
+        
+    </tr>
+        
+</table>
+</form>
+
+
+    
+</body>
+</html>
